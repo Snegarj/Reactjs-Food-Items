@@ -1,0 +1,464 @@
+h1,
+p {
+  font-family: Lato;
+}
+.row {
+  height: fit-content;
+}
+.card {
+  cursor: pointer;
+}
+#join {
+  display: none;
+  max-width: 0;
+}
+body {
+  background-color: rgba(108, 174, 250, 0.13);
+  padding-top: 2%;
+  padding-bottom: 2%;
+  max-width: 100%;
+}
+.container {
+  margin: auto auto;
+  border-radius: 15px;
+  background-color: white;
+  padding-left: 0px;
+}
+
+.inline,
+#inline {
+  display: flex;
+  flex-direction: row;
+}
+.block,
+#block {
+  display: flex;
+  flex-direction: column;
+}
+.side-nav {
+  height: 100%;
+
+  border-radius: 10px;
+
+  z-index: 1;
+  margin-left: 0px;
+
+  background-color: rgb(9, 250, 150);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.side-nav p {
+  background-color: white;
+  color: rgb(9, 250, 150);
+  padding: 5px;
+  border-radius: 50px;
+
+  margin: 50px 3px;
+}
+#items {
+  /* justify-content: center; */
+  display: flex;
+  /* columns: 3; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: fit-content;
+  max-width: 100%;
+}
+span {
+  text-align: right;
+  color: gray;
+  font-size: small;
+}
+
+p,
+h5 {
+  font-size: medium;
+}
+.text-right {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.text-right p,
+.text-right h5 {
+  padding: 5px;
+}
+.float-right {
+  margin: auto auto;
+  display: flex;
+  flex-direction: row;
+  height: 50vw;
+}
+.col-7 {
+  padding-right: 30px;
+
+  height: 100%;
+}
+.col-2{
+  font-size: x-small;
+}
+#order #selected span {
+  font-weight: 600;
+  padding-left: 3px;
+  font-size: xx-small;
+}
+.card {
+  margin: 2%;
+  background-color: white;
+  box-shadow: 2px 2px 5px 2px rgba(128, 128, 128, 0.171);
+  width: 20%;
+
+  height: 30%;
+  padding: 5px;
+  cursor: pointer;
+  justify-content: center;
+}
+img {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 100%;
+  margin: 1px auto;
+}
+.selected span,
+.name {
+  font-size: smaller;
+}
+.card p,
+.card h5 {
+  font-size: 12px;
+  margin: 1px 1px;
+}
+.card .text-right,
+.card .text-left {
+  margin: auto;
+}
+#order {
+  float: right;
+
+  margin-top: 10%;
+}
+#order .inline {
+  justify-content: space-between;
+}
+
+#order #selected {
+  margin: 45px auto;
+}
+#order #selected img {
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 100%;
+  margin: 1px auto;
+}
+#order #selected span {
+  font-size: small;
+  font-weight: 600;
+  padding-left: 3px;
+}
+#order #selected h5 {
+  font-size: small;
+}
+
+#order .col-6 {
+  padding: 1%;
+  margin: 1%;
+}
+#order h5 {
+  font-weight: 700;
+}
+#inlinecir {
+  border: 1px solid rgb(9, 250, 150);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  margin: 4% 1%;
+}
+
+#inlinecir span {
+  cursor: pointer;
+  margin: 10%;
+}
+
+#order .col-2 span {
+  cursor: pointer;
+}
+
+#header {
+  display: none;
+}
+#HomeRouter {
+  display: none;
+  max-width: 0;
+}
+.selected #x {
+  cursor: pointer;
+}
+.container {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+@media (max-width: 700px) {
+  .container {
+    display: none;
+    max-width: 0;
+  }
+  #HomeRouter {
+    display: block;
+    max-width: 100%;
+  }
+  #HomeRouter .inline {
+    justify-content: space-evenly;
+  }
+  #HomeRouter p {
+    color: white;
+    text-decoration: none;
+  }
+  #HomeRouter .MENU {
+    color: black;
+  }
+  .MENU {
+    width: 50%;
+    text-align: left;
+    font-size: medium;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+  }
+
+  .MYORDERBTN {
+    width: 50%;
+    text-align: right;
+    font-size: small;
+    color: black;
+  }
+
+  #HomeRouter button {
+    width: fit-content;
+    border: 1px solid rgb(10, 255, 63);
+    background-color: rgb(9, 250, 150);
+    border-radius: 5px;
+    height: fit-content;
+    padding: 2%;
+  }
+  .MENUBLOCKACTIVE {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20%;
+  }
+  .MENUBLOCK {
+    display: none;
+    max-width: 0;
+  }
+
+  #HomeRouter .selected {
+    margin: auto auto;
+  }
+
+  #HomeRouter #inlinecir span {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ORDERFALSE {
+    display: none;
+    max-width: 0;
+  }
+  #HomeRouter .float-right {
+    width: 100%;
+  }
+  #HomeRouter .row {
+    margin: auto auto;
+  }
+  #HomeRouter {
+    display: block;
+    max-width: 100%;
+  }
+
+  #HomeRouter .float-right {
+    max-width: 100%;
+  }
+
+  #HomeRouter div#items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #HomeRouter .card {
+    width: 45%;
+    height: 80%;
+  }
+  #HomeRouter .card span {
+    color: grey;
+    padding: 3;
+  }
+  #HomeRouter p,
+  #HomeRouter span,
+  #HomeRouter h5 {
+    color: black;
+    font-size: smaller;
+    font-weight: 700;
+  }
+  #HomeRouter .row {
+    margin: auto auto;
+    max-width: 100%;
+  }
+  #HomeRouter div#block {
+    width: 100%;
+  }
+  #HomeRouter #order #selected img {
+    width: 12vw;
+    height: 12vw;
+  }
+
+  #HomeRouter img {
+    width: 45%;
+    height: 50%;
+    border-radius: 100%;
+    margin: 1px auto;
+  }
+
+  @media (max-width: 1000px) {
+    #HomeRouter .selected {
+      margin: auto auto;
+    }
+
+    #HomeRouter #inlinecir span {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .ORDERFALSE {
+      display: none;
+      max-width: 0;
+    }
+    #HomeRouter .float-right {
+      width: 100%;
+    }
+    #HomeRouter .row {
+      margin: auto auto;
+    }
+    #HomeRouter {
+      display: block;
+      max-width: 100%;
+    }
+
+    #HomeRouter .float-right {
+      max-width: 100%;
+    }
+
+    #HomeRouter div#items {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #HomeRouter .card {
+      width: 35%;
+      height: 80%;
+    }
+    #HomeRouter .card span {
+      color: grey;
+      padding: 3;
+    }
+    #HomeRouter p,
+    #HomeRouter span,
+    #HomeRouter h5 {
+      color: black;
+      font-size: smaller;
+      font-weight: 700;
+    }
+    #HomeRouter .row {
+      margin: auto auto;
+      max-width: 100%;
+    }
+    #HomeRouter div#block {
+      width: 100%;
+    }
+    #HomeRouter #order #selected img {
+      width: 12vw;
+      height: 12vw;
+    }
+
+    #HomeRouter img {
+      width: 45%;
+      height: 50%;
+      border-radius: 100%;
+      margin: 1px auto;
+    }
+  }
+  @media (max-width: 1400px) {
+    #items {
+      /* justify-content: center; */
+      display: flex;
+      /* columns: 3; */
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: fit-content;
+      max-width: 100%;
+    }
+
+    .selected {
+      margin: auto auto;
+    }
+
+    #inlinecir span {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .float-right {
+      width: 100%;
+    }
+    .row {
+      margin: auto auto;
+    }
+
+    .float-right {
+      max-width: 100%;
+    }
+
+    div#items {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .card {
+      width: 20%;
+      height: 80%;
+    }
+    .card span {
+      color: grey;
+      padding: 3;
+    }
+    p,
+    span,
+    h5 {
+      color: black;
+      font-size: smaller;
+      font-weight: 700;
+    }
+    .row {
+      margin: auto auto;
+      max-width: 100%;
+    }
+    div#block {
+      width: 100%;
+    }
+    #order #selected img {
+      width: 12vw;
+      height: 12vw;
+    }
+
+    img {
+      width: 45%;
+      height: 50%;
+      border-radius: 100%;
+      margin: 1px auto;
+    }
+  }
+}
